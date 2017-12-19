@@ -11,7 +11,7 @@ class Customer(models.Model):
 #    CustEmail   = models.TextField(null=False)
     # 고객 타입 A:관리자 B:판매자 C:소비자
     CustType    = models.CharField(max_length=1)
-    
+
     def __str__(self):
         return self.CustID
 
