@@ -21,6 +21,10 @@ from bookmark.views import BookmarkLV,BookmarkDV
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 	url(r'^blog', include('blog.urls')),
-	url('^bookmark/$', BookmarkLV.as_view(), name='index'),
-	url('^bookmark/(?P<pk>\d+)/$', BookmarkDV.as_view(), name='detail'),
+	url(r'^bookmark/', include('bookmark.urls', namespace='bookmark')),
+	url(r'^blog2', include('blog2.urls', namespace='blog2')),
+
+
+	#url('^bookmark/$', BookmarkLV.as_view(), name='index'),
+	#url('^bookmark/(?P<pk>\d+)/$', BookmarkDV.as_view(), name='detail'),
 ]
