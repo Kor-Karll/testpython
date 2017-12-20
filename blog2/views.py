@@ -9,7 +9,7 @@ from blog2.models import Post
 
 class PostLV(ListView):
     model = Post
-    template_name = 'blog/post_all.html'
+    template_name = 'blog2/post_all.html'
     context_object_name = 'posts'
     paginate_by = 2
 
