@@ -1,7 +1,7 @@
 from django.contrib import admin
 from blog2.models import Post
 
-# Register your models here.
+# Register your models here
 
 class PostAdmin(admin.ModelAdmin):
     list_display = ('title', 'modify_date')
