@@ -27,7 +27,7 @@ class Post(models.Model):
             return self.title
 
         def get_absolute_url(self):
-            return reverse('blog:post_detail', args=(self.slug,))
+            return reverse('blog2:post_detail', args=(self.slug,))
 
         def get_previous_post(self):
             return self.get_previous_by_modify_date()
