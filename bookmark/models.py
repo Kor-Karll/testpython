@@ -8,7 +8,7 @@ class Bookmark(models.Model):
     #북마크URL
     url = models.URLField('url', unique = True)
 
-def __str__(self):
-	return self.title
+    def __str__(self):
+	    return self.title
 
 # Create your models here.
