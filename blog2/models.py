@@ -1,14 +1,14 @@
 from django.db import models
 
-from __future__ import unicode_literals
-from django.urls.encoding import python_2_unicode_compatible
+#from __future__ import unicode_literals
+#from django.urls.encoding import python_2_unicode_compatible
 
 from django.db import models
 from django.core.urlresolvers import reverse
 
 # Create your models here.
 
-@python_2_unicode_compatible
+#@python_2_unicode_compatible
 class Post(models.Model):
         title       = models.CharField('TITEL', max_length=50)
         slug        = models.SlugField('SLUG', unique=True, allow_unicode=True, help_text='one word for title alias.')
