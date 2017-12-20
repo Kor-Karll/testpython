@@ -16,8 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.conf.urls import include
 from django.contrib import admin
+from bookmark.views import BookmarkLV,BookmarkDV
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 	url(r'^blog', include('blog.urls')),
+	url('^bookmark/$', BookmarkLV.as_view(), name='index'),
+	url('^bookmark/(?P<pk>\d+)/$', BookmarkDV.as_view(), name='detail'),
 ]
