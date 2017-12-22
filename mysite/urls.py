@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 	url(r'^blog', include('blog.urls')),
 	url(r'^bookmark/', include('bookmark.urls', namespace='bookmark')),
-	url(r'^blog2', include('blog2.urls', namespace='blog2')),
+	url(r'^blog2/', include('blog2.urls', namespace='blog2')),
 
 
 	#url('^bookmark/$', BookmarkLV.as_view(), name='index'),
