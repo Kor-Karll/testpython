@@ -10,7 +10,7 @@ from django.core.urlresolvers import reverse
 
 #@python_2_unicode_compatible
 class Post(models.Model):
-        title       = models.CharField('TITEL', max_length=50)
+        title       = models.CharField('TITLE', max_length=50)
         slug        = models.SlugField('SLUG', unique=True, allow_unicode=True, help_text='one word for title alias.')
         description = models.CharField('DESCRIPTION', max_length=100, blank=True, help_text='simple desciption text.')
         content     = models.TextField('CONTENT')

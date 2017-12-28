@@ -1,6 +1,6 @@
 <h1>Blog List</h1>
 
-{% for post in posts %}
+{% for post in posts_list %}
     <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
     {{ post.modify_date|date:"N d, Y" }}
     <p>{{ post.description }}</p>
