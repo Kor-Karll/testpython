@@ -16,6 +16,8 @@ Including another URLconf
 from django.conf.urls import url
 from django.conf.urls import include
 from django.contrib import admin
+
+from mysite.views import HomeView
 from bookmark.views import BookmarkLV,BookmarkDV
 
 urlpatterns = [
