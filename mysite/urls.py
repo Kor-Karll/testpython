@@ -23,7 +23,7 @@ urlpatterns = [
 	url(r'^blog', include('blog.urls')),
 	url(r'^bookmark/', include('bookmark.urls', namespace='bookmark')),
 	url(r'^blog2/', include('blog2.urls', namespace='blog2')),
-
+	url(r'^$', HomeView.as_view(), name='home'),
 
 	#url('^bookmark/$', BookmarkLV.as_view(), name='index'),
 	#url('^bookmark/(?P<pk>\d+)/$', BookmarkDV.as_view(), name='detail'),
