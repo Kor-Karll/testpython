@@ -5,6 +5,8 @@ from django.db import models
 
 from django.db import models
 from django.core.urlresolvers import reverse
+from tagging.fields import TagField
+
 
 # Create your models here.
 
@@ -16,6 +18,9 @@ class Post(models.Model):
         content     = models.TextField('CONTENT')
         create_date = models.DateTimeField('Create Date', auto_now_add=True)
         modify_date = models.DateTimeField('Modify Date', auto_now=True)
+
+        # TagField 는 CharField를 상속받는다 디폴트(max_length=255,Blank=True)
+        tag         = TagField()
 
         class Meta:
             verbose_name = 'post'
