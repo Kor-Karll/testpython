@@ -31,7 +31,7 @@
     {% for tag in tags %}
     <a href="{% url 'blog2:tagged_object_list' tag.name %}">{{ tag.name }}</a>
     {% endfor %}
-    <a href="{% url 'blog2:tag_cloud" %}"><i>[ TagCloud ]</i></a>
+    <a href="{% url 'blog2:tag_cloud' %}"><i>[ TagCloud ]</i></a>
 </div>
 
 
