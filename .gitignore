@@ -4,6 +4,5 @@ __pycache__
 mysite/settings.py
 mysite/mysite_nginx.conf
 db.sqlite3
-/static
 .DS_Store
 .idea
