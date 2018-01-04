@@ -1,0 +1,5 @@
+Collecting django
+  Using cached Django-2.0.1-py3-none-any.whl
+Requirement already satisfied: pytz in /home/myvenv/lib/python3.6/site-packages (from django)
+Installing collected packages: django
+Successfully installed django-2.0.1
