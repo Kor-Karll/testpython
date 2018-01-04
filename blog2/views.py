@@ -63,7 +63,7 @@ class SearchFormView(FormView):
 
     def form_valid(self, form):
         schWord = '%s' % self.request.POST['search_word']
-        post_list = Post.objects.filter(Q(title__icontains=schWord) | Q(description__icontains=schWord) | Q(content__incontains=schWord)).distinct()
+        post_list = Post.objects.filter(Q(title__incontains=schWord) | Q(description__incontains=schWord) | Q(content__incontains=schWord)).distinct()
 
         context = {}
         context['form'] = form
